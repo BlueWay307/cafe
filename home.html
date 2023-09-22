@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Document</title>
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="./images/bg img.jpg" alt="" id="sligerImg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href=""> About us </a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href=""> Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="content">
+                <h1>Welcome To <span class="colour">Rise & Grind Cafe</span><br> House OF Cake Lovers</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate inventore reprehenderit,
+                    repudiandae dolorem quas similique sed expedita a hic aliquam.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var sligerImg = document.getElementById("sligerImg");
+        var images = new Array(
+            "images/bg img.jpg",
+            "images/bg1 img.jpg",
+            "images/bg 2 img.jpg",
+            "images/bg3 img.jpg"
+        );
+        var len = images.length;
+        var i = 0;
+        function slider(){
+            if (i > len - 1) {
+                i = 0;
+            }
+            sligerImg.src = images[i];
+            i++;
+            setTimeout('slider()', 4000);
+        }
+    </script>
+</body>
+
+</html>
