@@ -22,10 +22,10 @@
 #sligerImg {
     width: 100%;
     height: 100%;
-    animation: slider 4s linear infinite;
+    animation: slider 3.5s linear infinite;
 }
 
-@keyframes slider {
+/* @keyframes slider {
     0%{
         transform: scale(1.3);
     }
@@ -37,9 +37,9 @@
     }
     100%{
         transform: scale(1.3);
-    }
+    } */
     
-}
+/* } */
 
 .overlay{
     width: 100%;
@@ -118,4 +118,3 @@
 	50%{color:rgb(105, 33, 33);}
 	100%{color: #49070a;}
 }
-
