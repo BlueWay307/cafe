@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="item" style="background-image: url(image/3.jpg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/4.jpeg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/1.jpg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/2.jpg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/3.jpg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/4.jpeg);">
+                <div class="content">
+                    <div class="name">Muhammad Ali</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur adipisci velit! Ipsa molestias nemo error corporis, neque, iusto velit natus distinctio mollitia dolorem quam similique quas aut recusandae vitae!</div>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class='bx bx-left-arrow-alt'></i></button>
+            <button class="next"><i class='bx bx-right-arrow-alt' ></i></button>
+        </div>
+    </div>
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slider').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slider').prepend(items.length - 1);
+        })
+    </script>
+</body>
+
+</html>
